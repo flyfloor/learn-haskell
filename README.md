@@ -1,3 +1,3 @@
-# learn-haskel
+# learn-haskell
 
-learning haskel
+learning haskell
