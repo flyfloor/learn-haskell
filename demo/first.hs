@@ -24,3 +24,19 @@
 
 -- [fst x | x <- [(8, 1), (2,3)]]
 
+{-
+let triangles = [(a, b, c) | c <- [1..10], b <- [1..10], a <- [1..10]]
+let rightTriangles = [(a,b,c) | c <- [1..10], b <-[1..c], a <- [1..b], a^2 + b^2 == c^2]
+let rightTriangles' = [(a,b,c) | c <- [1..10], b <-[1..c], a <- [1..b], a^2 + b^2 == c^2, a + b + c = 24]
+-}
+
+-- removeNonUppercase :: String -> String
+-- removeNonUppercase xs = [x | x <- xs, x `elem` ['A'.. 'Z']]
+
+-- addThree :: Int -> Int -> Int -> Int   
+-- addThree x y z = x + y + z
+
+
+
+
+

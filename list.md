@@ -17,5 +17,9 @@
 
 ### list comprehension
 
+[x * 2 | x <- [1..10], x > 5]
 
+### tuple
+
+(1,'a')
 
