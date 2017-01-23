@@ -1,13 +1,16 @@
+## 类型
+
 ### 获取数据类型
-:t "A"
+
+`:t "A"`
 
 ### 函数指定入参出参类型
 
-removeNonUppercase :: String -> String
+`removeNonUppercase :: String -> String`
 
 ### 多参数类型
 
-addTree :: Int -> Int -> Int -> Int
+`addTree :: Int -> Int -> Int -> Int`
 
 ### 常见类型
 
@@ -31,20 +34,22 @@ addTree :: Int -> Int -> Int -> Int
 
 ### read 将字符串转成需要格式数据
 
+```
 read "4" + 2.5   
 read "[1, 2, 3]" :: [Int]
+```
 
 ### successor 后继子, predecessor 前置子
 
-succ 'B' 
+`succ 'B' `
 
 ### minBound 下限 maxBound 上限
 
-minBound :: Int
+`minBound :: Int`
 
 ### fromIntegral 将 Int 转 Num
 
-fromIntegral (length [1,2,3]) + 2.5
+`fromIntegral (length [1,2,3]) + 2.5`
 
 
 
