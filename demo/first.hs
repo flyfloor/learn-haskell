@@ -179,16 +179,36 @@ let rightTriangles' = [(a,b,c) | c <- [1..10], b <-[1..c], a <- [1..b], a^2 + b^
 --         big = quicksort [a | a <- xs, a > x]
 --     in small ++ [x] ++ big
 
+-- isUpperAlphanum :: Char -> Bool
+-- isUpperAlphanum = (`elem` ['A'..'Z'])
 
+-- applyTwice :: (a -> a) -> a  -> a
+-- applyTwice f x = f (f x)
 
+-- zipWith' :: (a -> b -> c) -> [a] -> [b] -> [c]
+-- zipWith' _ [] _ = []
+-- zipWith' _ _ [] = []
+-- zipWith' f (x:xs) (y:ys) = f x y : zipWith' f xs ys
 
+-- map' :: (a -> b) -> [a] -> [b]
+-- map' _ [] = []
+-- map' f (x:xs) = f x:map' f xs
 
+-- filter' :: (a -> Bool) -> [a] -> [a]
+-- filter' _ [] = []
+-- filter' f (x:xs)
+--     | f x = x: filter' f xs
+--     | otherwise = filter f xs
 
+chain :: (Integral a) => a -> [a]
+chain 1 = [1]
+chain n
+    | even n = n:chain(n `div` 2)
+    | odd n = n:chain(n * 3 + 1)
 
-
-
-
-
+numLongChains :: Int
+numLongChains = length (filter isLong (map chain [1..100]))
+    where isLong xs = length xs > 15
 
 
 
